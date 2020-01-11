@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <div class="alert alert-danger" role="alert">
+            Thanh toán MOMO
+          </div>
+        </div>
+        <div class="card-body">
+          <form action="/momo-payment" method="post">
+            <div class="form-group">
+              <label>Số tiền</label>
+              <input class="form-control" name="amount" placeholder="Số tiền" value="100000">
+            </div>
+            <button type="submit" class="btn btn-danger">Thanh toán</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <div class="alert alert-primary" role="alert">
+            Thanh toán VN Pay
+          </div>
+        </div>
+        <div class="card-body">
+          <form action="/vnpay-payment" method="post">
+            <div class="form-group">
+              <label>Số tiền</label>
+              <input class="form-control" name="amount" placeholder="Số tiền" value="100000">
+            </div>
+            <button type="submit" class="btn btn-primary">Thanh toán</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
